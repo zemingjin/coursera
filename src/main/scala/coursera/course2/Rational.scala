@@ -5,7 +5,7 @@ import math.abs
 case class Rational(x: Int, y: Int) {
   def this(x: Int) = this(x, 1)
   require(y > 0, "Denominator should be positive")
-  override def toString: String = numer/gcd + "/" + denom/gcd
+  override def toString: String = numer/gcd + "/" + denom / gcd
 
   def + (that: Rational): Rational = add(that)
   def - (that: Rational): Rational = sub(that)

@@ -1,7 +1,5 @@
 package coursera.course3
 
-import sun.invoke.empty.Empty
-
 object insets {
 }
 
@@ -30,7 +28,7 @@ case class NonEmpty(elem: Int, left: IntSet, right: IntSet) extends IntSet {
     else if (x > elem) NonEmpty(elem, left, right incl x)
     else this
 
-  def union(other: IntSet): IntSet = ((left union right) union other) incl elem
+  def union(other: IntSet): IntSet = left union right union other incl elem
 
   override def toString: String = "{" + left + elem + right + "}"
 }

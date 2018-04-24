@@ -2,8 +2,8 @@ package coursera.course3
 
 import org.scalatest.{FlatSpec, Matchers}
 
-class IntSetTest  extends FlatSpec with Matchers {
-  def mockTree: NonEmpty = NonEmpty(7, NonEmpty(5, Empty, Empty),
+class IntSetTest extends FlatSpec with Matchers {
+  def mockTree: tweet.NonEmpty = NonEmpty(7, NonEmpty(5, Empty, Empty),
                                     NonEmpty(11, NonEmpty(9, Empty, Empty),
                                              NonEmpty(13, Empty, Empty)))
 
